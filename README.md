@@ -1,38 +1,57 @@
 # 📊 Gerenciador Financeiro Pessoal
 
-Um sistema completo de gestão financeira com interface gráfica interativa e um painel analítico (Dashboard) integrado. Desenvolvido para facilitar o controle de gastos diários, permitindo o cadastro de despesas e a visualização de métricas de consumo de forma clara e executiva.
+Um sistema Desktop robusto para gestão de finanças pessoais, projetado para oferecer controle total sobre suas despesas diárias e mensais. O projeto une uma interface gráfica intuitiva para a operação do dia a dia com um Dashboard analítico avançado para a extração de insights financeiros, separando perfeitamente a aplicação da análise de dados.
 
-## 💡 Ideia do Projeto
+## 💡 Utilidade e Ideia do Projeto
 
-O objetivo deste projeto é criar uma solução de ponta a ponta para o controle de finanças pessoais. Em vez de depender de planilhas manuais complexas, o usuário interage com um software Desktop amigável para registrar os gastos, enquanto um Dashboard profissional em Power BI consome esses dados para gerar insights automáticos, separando perfeitamente a camada de aplicação da camada de análise de dados.
+O foco principal deste sistema é substituir planilhas manuais e confusas por uma ferramenta onde o usuário possa registrar, gerenciar e analisar seu dinheiro de forma estruturada. Ele foi pensado para quem precisa de respostas rápidas sobre sua saúde financeira: "Para onde está indo meu dinheiro?", "Qual mês eu gastei mais?" e "Qual a minha média diária de gastos?". 
 
-## ✨ Funcionalidades
+## ✨ Funcionalidades Principais
 
-* **Cadastro de Despesas:** Inserção rápida de novos gastos com valor, data e categoria.
-* **Categorização Inteligente:** Divisão dos gastos em categorias (Alimentação, Lazer, Educação, Transporte, Outros).
-* **Persistência de Dados Local:** Salvamento automático das informações em uma base de dados local (Excel), garantindo privacidade total (os dados do usuário não sobem para a nuvem).
-* **Interface Gráfica (GUI):** Telas modernas e intuitivas desenvolvidas com PySide6.
-* **Dashboard Executivo:** Painel em Power BI para acompanhamento de totais, médias, gráfico de rosca (distribuição por categoria) e gráfico de colunas (evolução diária).
+O sistema foi construído para cobrir todo o ciclo de vida de uma despesa, desde o cadastro até a análise visual:
+
+* **Gestão Completa de Gastos (CRUD):** 
+  * **Adicionar:** Inserção de novas despesas com valor, data, descrição e categoria.
+  * **Listar:** Visualização de todos os gastos registrados em uma tabela limpa e organizada.
+  * **Editar:** Correção rápida de valores ou categorias de despesas já cadastradas.
+  * **Remover:** Exclusão de registros incorretos ou duplicados com facilidade.
+* **Relatórios Mensais:** Filtragem e compilação automática dos gastos, permitindo que o usuário visualize exatamente o acumulado de um mês específico.
+* **Categorização Inteligente:** Organização das despesas por áreas da vida (Alimentação, Lazer, Educação, Transporte, Outros) para identificar os maiores ralos financeiros.
+* **Privacidade e Persistência Local:** Todo o banco de dados é gerado e salvo localmente no computador do usuário em formato Excel (`.xlsx`), garantindo que nenhuma informação financeira sensível seja enviada para a nuvem.
+
+## 📈 O Dashboard Executivo (Power BI)
+
+Para complementar o software, o projeto conta com um painel interativo construído em Power BI que consome os dados gerados pela aplicação e oferece uma visão gerencial:
+
+* **Cartões de KPI (Indicadores Chave):** Exibição imediata do *Total Gasto no Mês*, valor da *Maior Compra* realizada e o *Gasto Médio* por despesa.
+* **Distribuição por Categoria:** Um gráfico de rosca detalhado que mostra a porcentagem exata da sua renda direcionada para cada área (ex: 30% em Alimentação, 15% em Lazer).
+* **Evolução Diária:** Um gráfico de colunas cronológico que mapeia o comportamento de consumo dia após dia, permitindo identificar picos de gastos ao longo do mês.
+* **Extrato Detalhado:** Uma matriz/tabela inferior para consulta rápida de cada transação sem precisar abrir a aplicação principal.
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **Back-end & Lógica:** Python
-* **Interface Gráfica (GUI):** PySide6
-* **Armazenamento de Dados:** Planilha Excel (`.xlsx`)
-* **Análise de Dados (BI):** Microsoft Power BI
-* **Versionamento:** Git & GitHub
+* **Linguagem Principal:** Python (Back-end e Lógica de Negócios)
+* **Interface Gráfica (GUI):** PySide6 (Framework Qt para Python)
+* **Manipulação de Dados:** Bibliotecas Python para integração e geração de planilhas (`pandas` / `openpyxl`)
+* **Armazenamento:** Planilha Excel (`.xlsx`)
+* **Business Intelligence (BI):** Microsoft Power BI
+* **Versionamento:** Git e GitHub
 
 ---
 
-## 🚀 Como Rodar o Projeto (Aplicação Python)
+## 🚀 Como Rodar o Projeto Passo a Passo
 
-### Pré-requisitos
+### 1. Rodando o Programa Principal (Python)
 
-* Ter o [Python](https://www.python.org/downloads/) instalado na sua máquina.
-* (Recomendado) Criar um ambiente virtual.
+**Pré-requisitos:**
+* Ter o [Python](https://www.python.org/downloads/) instalado no computador.
 
-### Passo a Passo
-
-1. **Clone o repositório:**
+**Passo a Passo:**
+1. Abra o terminal (ou Prompt de Comando/PowerShell) na pasta onde deseja salvar o projeto.
+2. Clone este repositório executando:
    ```bash
    git clone [https://github.com/AnaBeatrizGuimaraes/gerenciador-financeiro-python.git](https://github.com/AnaBeatrizGuimaraes/gerenciador-financeiro-python.git)
+1. **Entre na pasta do projeto:**
+   ```bash
+   cd gerenciador-financeiro-python
+   

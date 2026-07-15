@@ -51,7 +51,58 @@ Para complementar o software, o projeto conta com um painel interativo construí
 2. Clone este repositório executando:
    ```bash
    git clone [https://github.com/AnaBeatrizGuimaraes/gerenciador-financeiro-python.git](https://github.com/AnaBeatrizGuimaraes/gerenciador-financeiro-python.git)
-1. **Entre na pasta do projeto:**
-   ```bash
-   cd gerenciador-financeiro-python
+
+### Entre na pasta do projeto
+
+```bash
+cd gerenciador-financeiro-python
+```
+
+### Instale as dependências necessárias
+
+Execute o comando abaixo para instalar as bibliotecas necessárias para a interface gráfica:
+
+```bash
+pip install PySide6 openpyxl pandas
+```
+
+> **Observação:** Se houver um arquivo `requirements.txt` no projeto, utilize o comando abaixo em vez do anterior:
+>
+> ```bash
+> pip install -r requirements.txt
+> ```
+
+### Inicie a aplicação
+
+```bash
+python main.py
+```
+
+> **Nota:** Ao executar o programa pela primeira vez e cadastrar sua primeira despesa, o sistema criará automaticamente o arquivo do banco de dados `minhas_financas.xlsx` no seu computador.
+
+---
+
+# 2. Rodando e Conectando o Dashboard (Power BI)
+
+O arquivo do Power BI disponível neste repositório contém **dados de demonstração** para que você possa visualizar o layout. Para conectá-lo aos seus próprios gastos gerados pela aplicação Python, siga os passos abaixo.
+
+## Pré-requisitos
+
+- Ter o **Power BI Desktop** instalado.
+- Ter executado a aplicação Python e cadastrado pelo menos uma despesa (para gerar a planilha `minhas_financas.xlsx`).
+
+## Passo a passo
+
+1. Abra a pasta `dashboard` presente no repositório clonado.
+2. Dê um duplo clique no arquivo `Dashboard_gestao_financeira.pbix` para abri-lo no Power BI.
+3. No menu superior (**Página Inicial**), clique na seta ao lado do botão **Transformar Dados** e selecione **Configurações de fonte de dados**.
+4. Na janela que será aberta, selecione o caminho do arquivo listado e clique em **Alterar Fonte...**.
+5. Clique em **Procurar...** e navegue até a pasta raiz do projeto no seu computador.
+6. Selecione o arquivo `minhas_financas.xlsx` gerado pela aplicação Python.
+7. Clique em **OK** e feche a janela de configurações.
+8. Por fim, clique no botão **Atualizar** (ícone de setas circulares) localizado na guia **Página Inicial**.
+
+## Resultado
+
+Após a atualização, os dados de demonstração serão substituídos automaticamente pelas informações reais cadastradas na aplicação Python. O dashboard passará a exibir e analisar todas as suas despesas registradas.
    

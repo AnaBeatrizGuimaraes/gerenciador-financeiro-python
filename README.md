@@ -82,7 +82,7 @@ python main.py
 
 ---
 
-# 2. Rodando e Conectando o Dashboard (Power BI)
+### 2. Rodando e Conectando o Dashboard (Power BI)
 
 O arquivo do Power BI disponível neste repositório contém **dados de demonstração** para que você possa visualizar o layout. Para conectá-lo aos seus próprios gastos gerados pela aplicação Python, siga os passos abaixo.
 

@@ -30,8 +30,8 @@ Para complementar o software, o projeto conta com um painel interativo construí
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **Linguagem Principal:** Python (Back-end e Lógica de Negócios)
-* **Interface Gráfica (GUI):** PySide6 (Framework Qt para Python)
+* **Linguagem Principal:** Python 
+* **Interface Gráfica (GUI):** PySide6 
 * **Manipulação de Dados:** Bibliotecas Python para integração e geração de planilhas (`pandas` / `openpyxl`)
 * **Armazenamento:** Planilha Excel (`.xlsx`)
 * **Business Intelligence (BI):** Microsoft Power BI

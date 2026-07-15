@@ -191,7 +191,7 @@ class TelaPrincipal(QMainWindow):
 
         if gasto_selecionado >= 0:
             self.meu_gerenciador.remover(gasto_selecionado)
-
+            self.meu_gerenciador.salvar_dados()
             self.atualizar_tabela()
 
     def aplicar_filtro(self):

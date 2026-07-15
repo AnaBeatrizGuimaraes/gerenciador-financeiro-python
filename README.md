@@ -6,6 +6,10 @@ Um sistema Desktop robusto para gestão de finanças pessoais, projetado para of
 
 O foco principal deste sistema é substituir planilhas manuais e confusas por uma ferramenta onde o usuário possa registrar, gerenciar e analisar seu dinheiro de forma estruturada. Ele foi pensado para quem precisa de respostas rápidas sobre sua saúde financeira: "Para onde está indo meu dinheiro?", "Qual mês eu gastei mais?" e "Qual a minha média diária de gastos?". 
 
+## 🖼️ Visão Geral do Dashboard
+*(Abaixo está a interface analítica gerada a partir dos dados do sistema)*
+
+![Dashboard Financeiro](images/dashboardd.png)
 ## ✨ Funcionalidades Principais
 
 O sistema foi construído para cobrir todo o ciclo de vida de uma despesa, desde o cadastro até a análise visual:
@@ -49,10 +53,11 @@ Para complementar o software, o projeto conta com um painel interativo construí
 **Passo a Passo:**
 1. Abra o terminal (ou Prompt de Comando/PowerShell) na pasta onde deseja salvar o projeto.
 2. Clone este repositório executando:
-   ```bash
-   git clone [https://github.com/AnaBeatrizGuimaraes/gerenciador-financeiro-python.git](https://github.com/AnaBeatrizGuimaraes/gerenciador-financeiro-python.git)
 
-### Entre na pasta do projeto
+```bash
+git clone https://github.com/AnaBeatrizGuimaraes/gerenciador-financeiro-python.git
+```
+3. Entre na pasta do projeto
 
 ```bash
 cd gerenciador-financeiro-python
